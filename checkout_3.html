@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角PK✧*｡٩(ˊᗜˋ*)و✧*｡</title>
+    <!-- IE相容性 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png" />
+    <link rel="stylesheet" href="sass/stylesheets/main.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <div class="w-100">
+                <div class="container d-flex">
+                    <input type="checkbox" id="hamburger" class="hamburgerCheckBox">
+                    <label for="hamburger" class="hamburgerBtn"><i class="fas fa-bars"></i></label>
+                    <div class="hamburgerBtnList">
+                        <ul>
+                            <li class="hamburgerItem"><a href="home.html">首頁</a> </li>
+                            <li class="hamburgerItem"><a href="product.html">甜點</a> </li>
+                            <li class="hamburgerItem"><a href="login.html">登入</a> </li>
+                        </ul>
+                    </div>
+                    <div class="navLogo d-flex"><a href="home.html"></a></div>
+                    <ul class="navPageArea d-flex">
+                        <li><a href="home.html" class="navPageBtn d-flex">首頁</a> </li>
+                        <li><a href="product.html" class="navPageBtn d-flex">甜點</a> </li>
+                        <li><a href="login.html" class="navPageBtn d-flex">登入</a> </li>
+                    </ul>
+                    <div class="d-flex cartBtn"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="checkoutContainer">
+            <form>
+                <div class="formArea d-flex flex-column ">
+                    <div class="formTitle flex-between w-100">
+                        <div class="formNowPage">運送</div>
+                        <div class="progressBar d-flex flex-between">
+                            <span class="cricle d-flex"><span class="criclePoint cricle_1 cricleChecked">
+                                    <a href="checkout_1.html">
+                                        <i class="fas fa-check-circle"></i>
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="progressLine lineChecked"></span>
+                            <span class="cricle d-flex"><span class="criclePoint cricle_2 cricleChecked">
+                                    <a href="checkout_2.html">
+                                        <i class="fas fa-check-circle"></i>
+                                    </a>
+                                </span>
+                            </span>
+                            <span class="progressLine lineChecked"></span>
+                            <span class="cricle cricleOnPage d-flex"> <span class="criclePoint cricle_3"></span></span>
+                        </div>
+                    </div>
+                    <div class="formContent d-flex flex-between flex-column w-100">
+                        <div class="d-flex w-100 flex-wrap">
+                            <input type="radio" class="invoiceInput1" checked name="invoiceGroup" id="eInvoice">
+                            <input type="radio" class="invoiceInput2" name="invoiceGroup" id="pInvoice">
+                            <div class="d-flex w-100 switchBar">
+                                <label for="eInvoice" class="eInvoice">電子發票</label>
+                                <label for="pInvoice" class="pInvoice">郵寄發票</label>
+                            </div>
+                            <div class="w-100 checkForShow1">
+                                <div class="d-flex flex-column">
+                                    <div class="formItem">
+                                        <label for="email">電子郵件信箱 </label>
+                                        <input type="email" name="" id="email" placeholder="example@email.com">
+                                    </div>
+                                    <div class="formItem">
+                                        <label for="uniform">統一編號（選填） </label>
+                                        <input type="text" name="" id="uniform" placeholder="12345678">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100 checkForShow2">
+                                <div class="d-flex w-100">
+                                    <div class="w-50 formItem">
+                                        <label for="">地址</label>
+
+                                        <select name="" id="">
+                                            <option value="" disabled selected="true">縣市</option>
+
+                                            <option value="">高雄市</option>
+                                            <option value="">高雄市</option>
+                                            <option value="">高雄市</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-50 formItem">
+
+                                        <label for="pInvoiceCheckbox" class="pInvoiceCheckbox"><input type="checkbox"
+                                                id="pInvoiceCheckbox">同運送地址</label>
+
+                                        <select name="" id="">
+                                            <option value="" disabled selected="true">地區</option>
+                                            <option value="">新興區</option>
+                                            <option value="">新興區</option>
+                                            <option value="">新興區</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="text" class="w-100" placeholder="幸福路 520 號">
+                                <label for="">統一編號（選填） </label>
+                                <input type="text" class="w-100" placeholder="12345678">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="checkout_suc.html" class="formSubmit">確認結帳</a>
+            </form>
+            <div class="orderInf">
+                <div class="orderSummary">
+                    <div class="orderInfTitle">訂單摘要</div>
+                    <div class="orderInfcard">
+                        <div class="orderInfText d-flex flex-between">小計
+                            <span class="orderInfMoney">NT$ 2,700</span>
+                        </div>
+                        <div class="orderInfText d-flex flex-between">運費
+                            <span class="orderInfMoney">NT$ 300</span>
+                        </div>
+                        <div class="total d-flex flex-between">總計
+                            <span class="orderInfMoney">NT$ 3,000</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="shoppingList">
+                    <div class="orderInfTitle">購物清單</div>
+                    <div class="orderInfcard">
+                        <div class="shoppingItem d-flex">
+                            <div class="shoppingItemPic shoppingItemPic_1"></div>
+                            <div class="shoppingItemInf">
+                                <div class="shoppingItemName">焦糖馬卡龍（2）
+                                </div>
+                                <div class="shoppingItemMoney">NT$ 900</div>
+                            </div>
+                        </div>
+                        <div class="shoppingItem shoppingItem_mid d-flex">
+                            <div class="shoppingItemPic shoppingItemPic_2"></div>
+                            <div class="shoppingItemInf">
+                                <div class="shoppingItemName">焦糖馬卡龍（2）
+                                </div>
+                                <div class="shoppingItemMoney">NT$ 900</div>
+                            </div>
+                        </div>
+                        <div class="shoppingItem d-flex">
+                            <div class="shoppingItemPic shoppingItemPic_3"></div>
+                            <div class="shoppingItemInf">
+                                <div class="shoppingItemName">焦糖馬卡龍（2）
+                                </div>
+                                <div class="shoppingItemMoney">NT$ 900</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footerEmailArea">
+                <div class="container footerContainer d-flex flex-between">
+                    <div class="footerTitleBar d-flex">
+                        <div class="footerEmailLogo"></div>
+                        <p>訂閱你我的甜蜜郵件</p>
+                    </div>
+                    <div class="emailBar d-flex">
+                        <div class="emailIcon d-flex"><i class="fas fa-envelope"></i></div>
+                        <input type="text" placeholder="example@email.com">
+                        <button class="submit d-flex emailIcon">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footerInfArea">
+                <div class="container footerContainer">
+                    <div class="footerInf">
+                        <div class="footerInfLogo"></div>
+                        <p>07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
+                        <div class="footerTril">
+                            <ul class="communityBar d-flex">
+                                <li class="communityIcon communityIcon_1"></li>
+                                <li class="communityIcon communityIcon_2"></li>
+                            </ul>
+                            <div class="comInf">@Sweetaste* All Rights Reserved</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 載入Javascript-->
+    <script src="js/vue.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

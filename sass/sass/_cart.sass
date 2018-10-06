@@ -1,0 +1,148 @@
+
+.cartContent
+    margin-top: 30px
+    padding-bottom: 30px
+    margin-bottom: auto
+    .cartTitle
+        height: 65px
+        line-height: 65px
+.cartTitle,.orderListTitle
+    color: $darkGreen
+    background-color: $lightGray
+    text-align: center
+    font-size: $ft-l
+    font-weight: 700
+    margin-bottom: 30px
+.cartItem
+    box-sizing: border-box
+    width: 100%
+    min-height: 130px
+    padding-bottom: 20px
+    font-size: $ft-m
+    .cartItemPic
+        +size(110px)
+        +bgi
+    .cartItemPic_1
+        background-image: url(../../img/x_6.jpg)
+    .cartItemPic_2
+        background-image: url(../../img/home_product_2.jpg)
+    .cartItemPic_3    
+        background-image: url(../../img/cart_3.jpg)
+    .cartItemName
+        .cartItemNameUnitPrice
+            text-align: center
+    .cartItemCountBar
+        display: flex
+        .cartItemBox
+            +size(48px)
+            line-height: 48px
+            text-align: center
+            border: 1px solid $lightGray
+        .cartItemCountAdd,.cartItemCountDecrease
+            cursor: pointer
+            transition: .3s
+            &:hover
+                background-color: $light
+                box-shadow: 0px 0px 5px rgba(0,0,0,.3)
+    .cartItemMoney
+        font-weight: 700
+    .cartItemDelete
+        color: $grayGreen
+        cursor: pointer
+        &:hover
+            color: $yellow
+            transform: scale()
+
+
+
+.orderContainer
+    .formSubmit
+        margin-bottom: 240px
+
+.orderContent
+    width: 300px
+    background-color: $darkGreen
+    color: $lightGray
+    padding: 20px 0 4px 0
+    box-sizing: border-box
+    .orderInfcard
+        border: none !important
+        border-top: 1px solid $lightGray
+    .orderListTitle
+        box-sizing: border-box
+        background-color: transparent
+        color: $lightGray
+        padding-bottom: 20px
+        margin: 0 20px
+        border-bottom: 1px solid $lightGray
+.formSubmit
+    display: block
+    text-decoration: none
+    width: 100%
+    line-height: 65px
+    text-align: center
+    cursor: pointer
+.cart-d-block
+    display: none !important
+
+@media screen and (max-width: 992px) 
+    .cartPage
+        flex-direction: column
+        padding: 0 !important
+        .cartContent
+            margin-top: 0
+            .cartItem
+                padding: 0 30px 15px 30px 
+    .orderContainer
+        margin: 0
+        width: 100%
+        .orderSummary
+            width: 100%
+        .formSubmit
+            margin: 0
+            max-width: 100%
+
+@media screen and (max-width: 768px) 
+    .cartItemPic
+        width: 160px !important
+    .md-d-none
+        min-width: 120px
+    .md-flexSet
+        max-width: 45% !important
+        .cartItem
+            padding: 30px
+@media screen and (max-width: 680px) 
+    .md-flexSet
+        flex-direction: column
+        flex-wrap: wrap
+        .cartItemCountBar
+            margin-top: 8px
+    .md-d-none
+        display: none !important
+    .cartTitle
+        margin: 0
+    .cart-d-block
+        display: block !important
+        height: 45px
+        line-height: 45px
+        width: 100%
+        text-align: right
+        .cartItemDelete 
+            display: none
+        .cartItemMoney
+            border-top: 1px solid $lightGray
+            border-bottom: 1px solid $lightGray
+            margin-right: 20px
+            font-size: $ft-m
+            font-weight: 700
+    .cartItem
+        padding-bottom: 8.5px !important
+        padding-top: 30px !important
+    .cartItem:first-child
+        padding-top: 0 !important
+    .cartItemPic
+        width: 50% !important
+        max-width: 40%
+@media screen and (max-width: 480px) 
+    .cartItemPic
+        max-width: 45%

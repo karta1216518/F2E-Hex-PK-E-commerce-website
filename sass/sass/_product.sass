@@ -1,0 +1,211 @@
+.productPage
+    .jumbotron
+        background-image: url(../../img/productConcept.jpg)
+        position: relative
+        .jumbotronText
+            position: absolute
+            right: 40px
+            top: 40px
+            background-image: url(../../img/icon/s_NoReason.svg)
+            +bgi
+            +size(10%,70%)
+            background-size: contain
+            background-position: top
+.productContainer
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+    .positioning
+        position: relative
+        min-width: 300px
+    .productSort
+        width: 100%
+        position: absolute
+        text-align: center
+        font-size: $ft-l
+        color: $darkGreen
+        font-weight: 700
+        .productSortItem
+            height: 65px
+            line-height: 65px
+            box-sizing: border-box
+            border: 1px solid $lightGray
+            transition: .3s
+            cursor: pointer
+            &:hover
+                background-color: $yellow
+                box-shadow: 0 0 15px rgba(0,0,0,.3)
+        .productSortTitle
+            background-color: $darkGreen
+            height: 65px
+            line-height: 65px
+            color: #fff
+        .productSortItemActive
+            background-color: $lightGray
+            &:hover
+                background-color: $lightGray
+                color: $darkGreen
+                box-shadow: none
+                cursor: auto
+
+.productListArea
+    width: 100%
+    .productList
+        display: flex
+        flex-wrap: wrap
+.productListItem
+    width: 300px
+    margin-left: 20px
+    margin-bottom: 20px
+    position: relative
+    color: $darkGreen
+    text-align: center
+    .productListPic
+        +bgi
+        height: 315px
+    .productListPic_1
+        background-image: url(../../img/product_Item_1.jpg)
+    .productListPic_2
+        background-image: url(../../img/home_product_1.jpg)
+    .productListPic_3
+        background-image: url(../../img/cart_3.jpg)
+    .productListPic_4
+        background-image: url(../../img/home_product_4.jpg)
+    .productListPic_5
+        background-image: url(../../img/home_product_2.jpg)
+    .productListPic_6
+        background-image: url(../../img/product_item_4.jpg)
+
+    .todayFeatured
+        position: relative
+        width: 36px
+        background-color: $darkGreen
+        color: $light
+        writing-mode: vertical-lr
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10px
+        letter-spacing: 6px
+        box-sizing: border-box
+        font-weight: 700
+        left: 20px
+    .favoriteIcon
+        font-size: $ft-m
+        position: absolute
+        top: 10px
+        right: 10px
+        font-weight: 700
+        transition: .3s
+        border-radius: 100px
+        padding: 10px
+        &:hover
+            transform: scale(1.2,1.2)
+            color: $darkYellow
+.productListName,.productListMoney
+    border: 1px solid $lightGray
+    font-size: $ft-m
+    width: 100%
+    height: 56px
+    line-height: 56px
+.productListMoney
+    font-weight: 700
+    min-width: 130px
+.addToCart
+    font-size: $ft-l
+    font-weight: 700
+    height: 65px
+    line-height: 65px
+    background-color: $lightGray
+    transition: .3s
+    cursor: pointer
+    &:hover
+        box-shadow: 0px 0px 15px rgba(0,0,0,.3)
+        color: $light
+        background-color: $darkGreen
+.paginationBar
+    justify-content: flex-end
+    margin-bottom: 60px
+    
+    .paginationBox
+        +size(60px)
+        text-align: center
+        line-height: 60px
+        font-size: $ft-m
+        // font-weight: 700
+        cursor: pointer
+        box-sizing: border-box
+        border: 1px solid $lightGray
+    .paginationBoxActive,.paginationBox:hover
+        background-color: $darkGreen
+        color: $light
+    .paginationBoxActive:hover
+        background-color: $darkGreen !important
+        color: $light !important
+        box-shadow: none !important
+        transform: translateY(0px) !important
+        cursor: auto
+    .paginationBox:hover
+        box-shadow: 0 0 15px rgba(0,0,0,.2)
+        background-color: $lightGray
+        transform: translateY(-2px)
+        color: $darkGreen
+
+@media screen and (max-width: 992px) 
+    .jumbotron
+        margin-bottom: 30px !important
+    .productContainer
+        display: flex
+        flex-direction: column
+        .positioning
+            width: 100% !important
+            .productSort
+                display: flex
+                flex-direction: column
+                font-size: $ft-m 
+                .productSortTitle
+                    display: block
+                ul
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    li
+                        width: 100%
+    .productListArea
+        margin-top: 150px
+        .productListItem
+            width: 48%
+            margin: 1%
+            box-sizing: border-box
+
+@media screen and (max-width: 768px) 
+    .jumbotron
+        margin-bottom: 0px !important
+    .productListArea
+        margin-top: 340px
+        .productListItem
+            width: 45%
+            margin: 10px auto
+            box-sizing: border-box
+        .productSort
+            font-size: $ft-m 
+            .productSortTitle
+                display: block
+    .productSortList
+        flex-direction: column 
+    .productSortItem
+        width: 100%
+    .paginationBar
+        margin-top: 20px
+        margin-bottom: 30px
+        justify-content: center
+@media screen and (max-width: 680px) 
+    .productListItem
+        width: 90% !important
+        margin: 10px auto
+        box-sizing: border-box
+    .jumbotron
+        height: 75vw
+        min-height: 0px !important
+@media screen and (max-width: 480px) 

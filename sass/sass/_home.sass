@@ -1,0 +1,138 @@
+.homePage
+    margin-bottom: 60px
+    .jumbotron
+        margin-bottom: 0
+        background-image: url(../../img/home_Concept.jpg)
+    .blurBoxBar
+        justify-content: center
+        transform: translateY(-80px)
+        .blurBox
+            +bgi
+            width: 100%
+            max-width: 256px
+            height: 256px
+            display: flex
+            justify-content: center
+            align-items: center
+            writing-mode: vertical-lr
+            font-size: $ft-l
+            letter-spacing: 10px
+            color: #fff
+            background-color: $darkGreen
+            position: relative
+            transition: .3s
+            cursor: pointer
+            >p
+                position: relative
+                z-index: 3
+            .blurPic
+                filter: blur(5px) opacity(20%)
+                position: absolute
+                z-index: 2
+                +bgi
+                +size(100%)
+            &.blurBoxActive,&:hover
+                background-color: $yellow
+                color: $darkGreen
+                font-weight: 700
+        .blurBox_1
+            .blurPic
+                background-image: url(../../img/home_sheBox_1.jpg)
+        .blurBox_2
+            border-left: 1px solid $light
+            border-right: 1px solid $light
+            .blurPic
+                background-image: url(../../img/home_sheBox_2.jpg)
+        .blurBox_3
+            .blurPic
+                background-image: url(../../img/home_sheBox_3.jpg)
+                transform: rotate(180deg)
+    .md-imageWellTitle
+        height: 120px
+        width: 100%
+        display: none
+        +bgi(center,auto 50%)
+    .md-imageWellTitle_3
+        background-image: url(../../img/icon/s_NoReason-r.svg)
+    .imageWell
+        background-color: $lightGray
+        height: 420px
+        margin-bottom: 80px
+        .md-imageWellTitle_1
+            background-image: url(../../img/icon/s_whyDo-r.svg)
+        .md-imageWellTitle_2
+            background-image: url(../../img/icon/s_why-r.svg)
+
+        .imagePic
+            +bgi
+            height: 460px
+            width: 48%
+        .imagePic_1
+            background-image: url(../../img/home_leftPic.jpg)
+        .imagePic_2
+            background-image: url(../../img/home_rightPic.jpg)
+        .imageInf
+            +bgi(100% 0%,20%)
+            height: 460px
+            width: 52%
+            padding: 8% 5%
+            box-sizing: border-box
+            background-image: url(../../img/icon/l_whyDo.svg)
+            writing-mode: vertical-rl
+            display: flex
+            line-height: 36px
+            font-size: $ft-s
+            color: $grayGreen
+            align-items: flex-end
+    .imageWell_2
+        margin-bottom: 40px
+        .imageInf
+            +bgi(0% 0%,20%)
+            background-image: url(../../img/icon/l_why.svg)
+            align-items: flex-start
+    .midSlogan
+        .jumbotron
+            +bgi(center,10%)
+            background-image: url(../../img/icon/s_NoReason.svg)
+    .productListArea
+        margin: 0
+        .container
+            padding: 0
+        // margin: 20px auto !important
+
+@media screen and (max-width: 768px) 
+    .homePage
+        .blurBoxBar
+            transform: translateY(0)
+        .imageWell
+            height: auto
+            margin-bottom: 0
+            background-color: $light
+            >.container
+                display: flex
+                flex-direction: column
+                .imagePic
+                    width: 100%
+                    min-height: 250px
+                    height: auto
+                .imageInf
+                    background-color: $lightGray
+                    height: auto
+                    writing-mode: horizontal-tb
+                    background-image: none
+                    padding: 0
+                    width: 100%
+                    padding: 30px 10%
+        .md-imageWellTitle
+            display: block !important
+        .midSlogan
+            .jumbotron
+                display: none
+@media screen and (max-width: 680px) 
+    .homePage
+        .blurBoxBar
+            .blurBox
+                height: 180px
+                font-size: $ft-m
+@media screen and (max-width: 480px) 
+

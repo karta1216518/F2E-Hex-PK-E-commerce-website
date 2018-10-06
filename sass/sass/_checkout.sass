@@ -1,0 +1,243 @@
+.checkoutContainer
+    max-width: 780px
+    margin: 0 auto
+    padding-top: 20px
+    padding-bottom: 65px
+    display: flex
+form
+    width: 100%
+.formArea
+    background-color: $darkGreen
+    padding: 40px
+    box-sizing: border-box
+    .formTitle
+        display: flex
+        .formNowPage
+            font-size: 36px
+            font-weight: 700
+            width: 100%
+            color: #fff
+            margin-bottom: 30px
+.progressBar
+    height: 36px
+    line-height: 36px
+    width: 100%
+    .progressLine
+        width: 100%
+        border-bottom: 1px solid $grayGreen
+    .lineChecked
+        border-bottom: 1px solid $light
+    .cricle
+        border-radius: 50%
+        border: 1px solid $grayGreen
+    .cricle
+        +size(20px)
+        min-width: 20px
+        justify-content: center
+        color: $light
+    .criclePoint
+        border-radius: 50%
+        +size(14px)
+        box-sizing: border-box
+        background-color: $light
+        line-height: 14px
+    .cricleChecked
+        background-color: $darkGreen
+        font-size: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+    .cricleOnPage
+        border: 1px solid $light
+    a
+        i
+            color: #fff
+            font-size: 22px
+.formContent
+    label
+        display: block
+        width: 100%
+        padding: 0 4px
+        font-weight: 700
+        color: #fff
+        font-size: $ft-m
+        line-height: 40px
+        cursor: pointer
+        vertical-align: middle
+    input,select
+        height: 60px
+        width: 100%
+        border: 4px solid $darkGreen
+        box-sizing: border-box
+        outline: none
+        padding-left: 20px
+        font-size: $ft-m
+        background-color: $lightGray
+        color: $grayGreen
+        font-size: $ft-s
+        +font
+    .formItem
+        width: 100%
+    .padding-b
+        margin-bottom:  30px
+        border: 4px solid $darkGreen
+
+.formSubmit
+    width: 100%
+    height: 65px
+    background-color: $yellow
+    font-size: $ft-l
+    color: $darkGreen
+    +font
+    font-weight: 700
+    transition: .3s
+    border: none
+    &:hover
+        background-color: $darkYellow
+        transform: scale(1.05,1.05)
+        +shadow
+    &:active
+        transform: scale(1,1)
+
+.orderInf
+    margin-left: 20px
+    .orderSummary,.shoppingList
+        .orderInfTitle
+            width: 300px
+            height: 65px
+            line-height: 65px
+            text-align: center
+            font-size: $ft-l
+            font-weight: 700
+            background-color: $lightGray
+        .orderInfcard
+            padding: 16px
+            border: 1px solid $lightGray
+            .orderInfText
+                line-height: 20px
+            .total
+                font-size: $ft-m
+                font-weight: 700
+                padding-top: 16px
+    .shoppingList
+        margin-top: 20px
+        .shoppingItem_mid
+            padding: 16px 0
+        .shoppingItem
+            .shoppingItemPic
+                width: 120px
+                height: 80px
+                margin-right: 16px
+                +bgi
+            .shoppingItemPic_1
+                background-image: url(../../img/x_6.jpg)
+            .shoppingItemPic_2
+                background-image: url(../../img/home_product_2.jpg)
+            .shoppingItemPic_3
+                background-image: url(../../img/cart_3.jpg)
+
+            .shoppingItemInf
+                .shoppingItemName
+                    font-size: $ft-s
+            .shoppingItemMoney
+                text-align: center
+                font-weight: 700
+                padding: 8px
+.pInvoiceCheckbox
+    text-align: right
+    box-sizing: border-box
+    margin-right: 4px
+    display: flex
+    height: 40px
+    align-items: center
+    font-size: $ft-s !important
+    input[type="checkbox"]
+        width: 16px !important
+        height: 16px !important
+.invoiceInput1 ,.invoiceInput2
+    display: none
+#eInvoice:checked  
+    .eInvoice
+        background-color: #fff
+#pInvoice:checked  
+    .pInvoice
+        background-color: #fff
+.invoiceInput1:checked~.switchBar>.eInvoice ,.invoiceInput2:checked~.switchBar>.pInvoice
+    background-color: #fff
+    color: $darkGreen
+.invoiceInput1:checked~div.checkForShow1 ,.invoiceInput2:checked~.checkForShow2
+    display: block 
+    width: 100%
+.eInvoice,.pInvoice
+    text-align: center
+    padding: 8px !important
+    line-height: 56px
+    box-sizing: border-box
+    width: 100%
+    height: 56px
+    border: 1px solid #fff 
+    margin-bottom: 30px
+    font-weight: 700
+    transition: .3s
+    &:hover 
+        background-color: $grayGreen
+.checkForShow1,.checkForShow2
+    display: none 
+
+
+.sucPage
+
+    .jumbotron
+        background-image: url(../../img/checkout.jpg)
+        .progressBar
+            width: 180px
+            background-color: transparent
+            .progressLine
+                border-bottom: 1px solid $darkGreen
+            >.cricle
+                border-radius: 50px 
+                color: $darkGreen
+                justify-content: center
+                border: none
+                .criclePoint
+                    background-color: $trp
+        .continueShopping
+            max-width: 300px
+        .paySuc
+            min-height: 45px
+            margin-top: 20px
+            width: 100%
+            margin-bottom: 50px
+            background-image: url(../../img/icon/l_pay.svg)
+            +bgi
+            background-size: contain
+.rwd-d-show
+    display: block
+.rwd-d-none
+    display: none !important
+    max-width: 480px
+    box-sizing: border-box
+            
+
+@media screen and (max-width: 768px) 
+    .orderInf
+        display: none
+    .formArea
+        padding: 5%
+    .checkoutContainer
+        padding-bottom: 0
+@media screen and (max-width: 680px) 
+    .formArea 
+        padding: 30px !important
+    .sucPage
+        .jumbotron
+            margin-bottom: 0 !important
+            height: 520px !important
+@media screen and (max-width: 480px) 
+    .rwd-d-show
+        display: none !important
+    .rwd-d-none
+        display: block !important
+    .formArea 
+        padding: 20px !important
+
