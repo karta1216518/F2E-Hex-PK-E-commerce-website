@@ -5,7 +5,7 @@
 賽後會套用Vue.js來讓這個作品更完善一點。
 最後感謝各位觀看，也請不吝賜教，也歡迎各位來進行各種技術上的交流。</p>
 <i>E-mail : karta12165188@gmail.com</i>
-
+<a helf="https://karta1216518.github.io/F2E-Hex-PK-E-commerce-website/">作品連結</a>
 <h3>開發小日誌</h3>
 <ul>
   <li>10/1第一版嘗試手刻首頁部分</li>
