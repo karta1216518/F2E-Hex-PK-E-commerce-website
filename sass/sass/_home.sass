@@ -33,13 +33,13 @@
                 transition: .3s
                 +bgi
                 +size(100%)
-            &.blurBoxActive,&:hover
+            &:hover
                 background-color: $yellow
                 color: $darkGreen
                 font-weight: 700
                 .blurPic
                     filter: blur(1px) opacity(20%)
-                    transform: scale(1.2,1.2) rotate(30deg)
+                    transform: scale(1.2,1.2) rotate(10deg)
         .blurBox_1
             .blurPic
                 background-image: url(../../img/home_sheBox_1.jpg)
@@ -51,7 +51,6 @@
         .blurBox_3
             .blurPic
                 background-image: url(../../img/home_sheBox_3.jpg)
-                &:hover
     .md-imageWellTitle
         height: 120px
         width: 100%
@@ -139,5 +138,4 @@
             .blurBox
                 height: 180px
                 font-size: $ft-m
-@media screen and (max-width: 480px) 
 

@@ -13,7 +13,7 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <!-- CSS -->
-    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png"/>
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/icon/logo.png" />
     <link rel="stylesheet" href="sass/stylesheets/main.css">
 
 </head>
@@ -32,7 +32,9 @@
                             <li class="hamburgerItem"><a href="login.html">登入</a> </li>
                         </ul>
                     </div>
-                    <div class="navLogo d-flex"><a href="index.html"><h1>F2E切版PK戰-甜點電商</h1></a></div>
+                    <div class="navLogo d-flex"><a href="index.html">
+                            <h1>F2E切版PK戰-甜點電商</h1>
+                        </a></div>
                     <ul class="navPageArea d-flex">
                         <li><a href="index.html" class="navPageBtn d-flex">首頁</a> </li>
                         <li><a href="product.html" class="navPageBtn d-flex">甜點</a> </li>
@@ -57,13 +59,17 @@
                                         <div class="communitItem_3 md-communitBox communitItem"></div>
                                     </div>
                                 </div>
-                                <div class="formItem">
-                                    <span class="inputIcon"><i class="fas fa-user-alt"></i></span> <input type="text"
-                                        name="" id="" placeholder="電子信箱/手機號碼">
+                                <div class="formItem" for="account">
+                                    <label for="account" class="loginInputLabel">
+                                        <span class="inputIcon d-flex"><i class="fas fa-user-alt"></i></span>
+                                        <input type="text" name="" id="account" placeholder="電子信箱/手機號碼">
+                                    </label>
                                 </div>
-                                <div class="formItem ">
-                                    <span class="inputIcon"><i class="fas fa-key"></i></span> <input type="text" name=""
-                                        id="" placeholder="請輸入使用者密碼">
+                                <div class="formItem" for="password">
+                                    <label for="password" class="loginInputLabel">
+                                        <span class="inputIcon d-flex"><i class="fas fa-key"></i></span>
+                                        <input type="text" name="" id="password" placeholder="請輸入使用者密碼">
+                                    </label>
                                 </div>
                                 <div class="formItem">
                                     <label class="remember" for="rememberM e"><input type="checkbox" name="" id="rememberM e">記住我</label>

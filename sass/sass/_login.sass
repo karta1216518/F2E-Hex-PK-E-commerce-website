@@ -25,23 +25,25 @@
                 display: flex
                 margin-bottom: 8px
                 box-sizing: border-box
-                > input
-                    width: 100% !important
-                    padding: 0
-                    // min-width: 250px
+                
+                .inputIcon
+                    border: 4px solid $darkGreen
+                    border-right: 0
+                    background-color: $lightGray
+                    height: 60px
+                    color: $darkGreen
+                .loginInputLabel
+                    display: flex !important
+                    > input
+                        width: 100% !important
+                        padding: 0
             .remember
                 font-size: 16px
-            .inputIcon
-                border: 4px solid $darkGreen
-                border-right: 0
-                background-color: $lightGray
-                height: 60px
             input[type="text"]
                 border-left: 0
                 min-width: 250px
             input[type="checkbox"]
                 +size(16px)
-        
 .communityform
     height: 350px
     background-color: $lightGray
@@ -90,7 +92,6 @@
         display: block !important
     .loginContainer
         margin-bottom: 0
-
     .loginContainer    
         .formArea 
             height: auto !important
