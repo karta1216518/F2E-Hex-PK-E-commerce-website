@@ -49,9 +49,11 @@
     .cartItemDelete
         color: $grayGreen
         cursor: pointer
+        position: relative
+        transition: .3s
         &:hover
             color: $yellow
-            transform: scale()
+            transform: scale(1.5,1.5)
 
 
 
@@ -105,7 +107,7 @@
 @media screen and (max-width: 768px) 
     .cartItemPic
         width: 160px !important
-    .md-d-none
+    .moneyHideToggle
         min-width: 120px
     .md-flexSet
         max-width: 45% !important
@@ -117,7 +119,7 @@
         flex-wrap: wrap
         .cartItemCountBar
             margin-top: 8px
-    .md-d-none
+    .moneyHideToggle
         display: none !important
     .cartTitle
         margin: 0

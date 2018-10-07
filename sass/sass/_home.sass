@@ -22,6 +22,7 @@
             position: relative
             transition: .3s
             cursor: pointer
+            overflow: hidden
             >p
                 position: relative
                 z-index: 3
@@ -29,12 +30,16 @@
                 filter: blur(5px) opacity(20%)
                 position: absolute
                 z-index: 2
+                transition: .3s
                 +bgi
                 +size(100%)
             &.blurBoxActive,&:hover
                 background-color: $yellow
                 color: $darkGreen
                 font-weight: 700
+                .blurPic
+                    filter: blur(1px) opacity(20%)
+                    transform: scale(1.2,1.2) rotate(30deg)
         .blurBox_1
             .blurPic
                 background-image: url(../../img/home_sheBox_1.jpg)
@@ -46,7 +51,7 @@
         .blurBox_3
             .blurPic
                 background-image: url(../../img/home_sheBox_3.jpg)
-                transform: rotate(180deg)
+                &:hover
     .md-imageWellTitle
         height: 120px
         width: 100%
@@ -87,9 +92,9 @@
     .imageWell_2
         margin-bottom: 40px
         .imageInf
-            +bgi(0% 0%,20%)
+            +bgi(90% 0%,20%)
+            padding-left: 0
             background-image: url(../../img/icon/l_why.svg)
-            align-items: flex-start
     .midSlogan
         .jumbotron
             +bgi(center,10%)

@@ -73,7 +73,6 @@ nav
     .hamburgerBtn
         font-size: $ft-l
         display: none
-        border-radius: 8px
     .hamburgerBtnList
         box-shadow: 5px 0 8px rgba(0,0,0,.2)
         display: none
@@ -108,12 +107,14 @@ nav
             background-size: auto 100%
             background-repeat: no-repeat
             cursor: pointer
+            h1
+                text-indent: -9999px
     .navPageArea
         height: 100%
         margin-left: auto
         .navPageBtn
             text-decoration: none
-            padding: 0 30px
+            padding: 10px 30px
             height: 40px
             min-width: 32px
             font-weight: 700
@@ -147,7 +148,7 @@ nav
         position: absolute
         display: none
         opacity: 0
-        content: "There are no items in the shopping cart."
+        content: "There are 3 items in the shopping cart."
         line-height: 50px
         text-align: center
         top: 100px
@@ -249,8 +250,10 @@ nav
     margin-bottom: 60px
     min-height: 460px
     justify-content: center
-.md-d-none
+.moneyHideToggle
     min-width: 140px
+
+
 input[type="checkbox"]
     transform: translateY(2px)
 
