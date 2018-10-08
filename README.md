@@ -4,6 +4,7 @@
 這個作品中我主要使用的技術為Sass，主要的排版手法為Flex，另外搭配一點點Bootstrap常用的屬性來模擬一個小小框架，但還是手刻為主，自認有完全還原設計稿拉哈哈哈</p>
 賽後會套用Vue.js來讓這個作品更完善一點。
 最後感謝各位觀看，也請不吝賜教，也歡迎各位來進行各種技術上的交流。</p>
+<i>ps:快退伍了，徵求有缺菜鳥攻城獅的公司給個面試機會RRR ε(*´･∀･｀)зﾞ</i>
 <i>E-mail : karta12165188@gmail.com</i>
 <br>
 <a href="https://karta1216518.github.io/F2E-Hex-PK-E-commerce-website/">作品連結</a>
